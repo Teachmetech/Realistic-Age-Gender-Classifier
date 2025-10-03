@@ -1,0 +1,62 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Git
+.git/
+.gitignore
+.gitattributes
+
+# Documentation
+*.md
+*.txt
+!requirements.txt
+
+# HuggingFace specific files
+app_huggingface.py
+deploy_to_huggingface.sh
+verify_huggingface_deployment.py
+DEPLOYMENT_STEPS.md
+inference-config.yaml
+
+# Testing
+test_*.py
+tests/
+*.pytest_cache/
+
+# CI/CD
+.github/
+.gitlab-ci.yml
+
+# Other
+.DS_Store
+Thumbs.db
+
