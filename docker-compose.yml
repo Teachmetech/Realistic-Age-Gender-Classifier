@@ -7,15 +7,15 @@ services:
       dockerfile: Dockerfile
     container_name: age-gender-predictor
     ports:
-      - "8000:8000"
+      - "8006:8000"
     environment:
       - HOST=0.0.0.0
-      - PORT=8000
+      - PORT=8006
       - MODEL_PATH=model_quantized.onnx
       - AGE_CLASSES=18-24,25-34,35-44,45-54,55+
     restart: unless-stopped
     healthcheck:
-      test: ["CMD", "python", "-c", "import requests; requests.get('http://localhost:8000/health')"]
+      test: ["CMD", "python", "-c", "import requests; requests.get('http://localhost:8006/health')"]
       interval: 30s
       timeout: 10s
       retries: 3
